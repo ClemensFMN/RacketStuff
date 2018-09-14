@@ -45,7 +45,7 @@
 (define (get-range x)
   (range (* 3 (floor (/ x 3))) (* 3 (+ 1 (floor (/ x 3))))))
 
-(get-range 6)
+(get-range 6) ; -> '(6 7 8)
 
 ; provide all block neighbours
 (define (coords-block-neighbours row col)
