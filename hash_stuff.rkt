@@ -24,12 +24,13 @@
 
 
 (define (word-cnt lst)
-	(foldl (lambda (x acc)
-		(hash-update acc x inc 0))
-		(hash)
-		lst))
+  (foldl (lambda (x acc)
+           (hash-update acc x inc 0))
+    (hash)
+    lst))
 
-(word-cnt (string-split "hallo clemens hallo hallo"))
+(word-cnt
+ (string-split "hallo clemens hallo hallo"))
 
 
 
